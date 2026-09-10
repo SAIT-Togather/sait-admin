@@ -1,0 +1,109 @@
+/* =========================================================
+   ADMIN LAYOUT
+========================================================= */
+
+.admin-layout {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: var(--background-color);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.admin-main {
+  width: calc(100% - var(--sidebar-width));
+  height: 100vh;
+
+  margin-left: var(--sidebar-width);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: var(--background-color);
+
+  transition:
+    width 0.25s ease,
+    margin-left 0.25s ease;
+}
+
+
+/* =========================================================
+   SIDEBAR COLLAPSED
+========================================================= */
+
+.admin-layout.sidebar-collapsed .admin-main {
+  width: calc(100% - var(--sidebar-collapsed-width));
+  margin-left: var(--sidebar-collapsed-width);
+}
+
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admin-content {
+  flex: 1;
+
+  width: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  padding: 12px 14px;
+
+  /* 핵심 */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: var(--background-color);
+}
+
+/* =========================================================
+   SMALL HEIGHT
+========================================================= */
+
+/* 노트북 높이부터 세로 스크롤 */
+@media (max-height: 900px) {
+
+  .admin-content {
+    overflow-y: auto;
+  }
+
+}
+@media (max-height: 800px) {
+  .admin-content {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-height: 650px) {
+  .admin-content {
+    overflow-y: auto;
+  }
+
+  .dashboard-page {
+    height: auto;
+    min-height: 650px;
+  }
+}
+
+/* =========================================================
+   WIDTH RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .admin-content {
+    overflow-x: hidden;
+  }
+
+}

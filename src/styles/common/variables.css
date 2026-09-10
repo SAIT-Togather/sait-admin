@@ -1,0 +1,42 @@
+:root {
+  /* =========================
+     COLOR
+  ========================= */
+  --primary-color: #4f73e8;
+  --primary-hover-color: #3f63d9;
+
+  --text-primary: #182230;
+  --text-secondary: #667085;
+  --text-muted: #98a2b3;
+
+  --background-color: #f6f8fc;
+  --card-background: #ffffff;
+
+  --border-color: #e4e9f1;
+  --border-light-color: #eef1f5;
+
+  --success-color: #12b76a;
+  --warning-color: #f79009;
+  --danger-color: #f04438;
+
+  /* =========================
+     LAYOUT
+  ========================= */
+  --sidebar-width: 235px;
+  --sidebar-collapsed-width: 76px;
+  --header-height: 78px;
+  --footer-height: 30px;
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* =========================
+     SHADOW
+  ========================= */
+  --shadow-card:
+    0 2px 8px rgba(16, 24, 40, 0.04);
+}
